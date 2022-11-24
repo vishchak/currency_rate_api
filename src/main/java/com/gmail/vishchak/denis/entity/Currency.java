@@ -3,7 +3,6 @@ package com.gmail.vishchak.denis.entity;
 import com.gmail.vishchak.denis.utils.Id;
 import lombok.*;
 
-import java.util.Map;
 
 @ToString
 @Getter
@@ -16,6 +15,8 @@ public class Currency {
 
     private String baseCurrency;
 
-    private Map<String, Double> currencyConversionRate;
+    private String conversionCurrency;
+
+    private double conversionRate;
 
 }
